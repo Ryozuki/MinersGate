@@ -1,0 +1,2 @@
+# MinersGate
+work in progress
