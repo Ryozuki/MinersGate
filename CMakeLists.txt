@@ -26,7 +26,9 @@ set(CLIENT_SOURCES
         src/game/CGameClient.cpp
         src/game/CGameClient.hpp
         src/engine/client/CIO.cpp
-        src/engine/client/CIO.hpp)
+        src/engine/client/CIO.hpp
+        src/engine/client/graphics/CTriangle.cpp
+        src/engine/client/graphics/CTriangle.hpp src/engine/client/graphics/IDrawable.hpp)
 
 include_directories(src ${FREETYPE_INCLUDE_DIRS} ${GLEW_INCLUDE_DIRS} ${OPENGL_INCLUDE_DIR} ${glm_INCLUDE_DIR})
 add_executable(MinersGate ${CLIENT_SOURCES})

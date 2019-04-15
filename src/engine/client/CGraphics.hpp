@@ -4,6 +4,7 @@
 #include <memory>
 #include <SDL.h>
 #include <string>
+#include "graphics/CTriangle.hpp"
 
 class CGraphics
 {
@@ -11,17 +12,14 @@ class CGraphics
 	SDL_GLContext m_GLContext;
 
 	void SetGLAttributes();
-	uint GenVAO();
 	uint LoadShaders(std::string vertex_file_path, std::string fragment_file_path);
-	uint vertexbuffer;
 	uint m_ProgramID;
 public:
 	bool Initialize();
 	void Clear();
 	void SwapBuffer();
 	void OnExit();
-
-	void DrawTriangle();
+	uint Shader() { return m_ProgramID; }
 
 	SDL_Window *Window() { return m_Window; }
 };

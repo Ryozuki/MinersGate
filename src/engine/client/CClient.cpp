@@ -16,7 +16,6 @@ int CClient::Run()
 
 		OnUpdate();
 		Graphics().Clear();
-		Graphics().DrawTriangle();
 		OnRender();
 		Graphics().SwapBuffer();
 	}
