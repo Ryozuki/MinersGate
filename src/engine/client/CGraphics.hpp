@@ -5,6 +5,7 @@
 #include <SDL.h>
 #include <string>
 #include "graphics/CTriangle.hpp"
+#include "graphics/CQuad.hpp"
 
 class CGraphics
 {

@@ -6,6 +6,7 @@
 class CGameClient : public CClient
 {
 	CTriangle *m_Triangle;
+	CQuad *m_Quad;
 public:
 	void OnLoad() override;
 	void OnRender() override;
